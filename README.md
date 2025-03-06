@@ -42,22 +42,25 @@ The dataset is avaliable to download at [GeoAnalystBench](https://github.com/Geo
 The data being used in this research is avaliable to download at (tbd).
 
 ## Tasks
+There are 50 tasks in the dataset, and this section covers all tasks and their sources. For more details, please refer to the [GeoAnalystBench](https://github.com/GeoDS/GeoAnalystBench/blob/master/dataset/GeoAnalystBench.csv).
+
+Note that there are tasks with the same name but different id. This typically happens when the task is slightly different, or the task is a subset of a larger task.
 
 <details>
   <summary>Click to expand/collapse Task List</summary>
 
   | ID | Task Name | Source |
   |----|-----------|--------|
-  | 1  | Find heat islands and at-risk populations in Madison, Wisconsin | [Analyze urban heat using kriging](https://pro.arcgis.com/en/pro-app/latest/tool-reference/spatial-analyst/how-kriging-works.htm) |
-  | 2  | Find future bus stop locations in Hamilton | [Assess access to public transit](https://pro.arcgis.com/en/pro-app/latest/help/analysis/business-analyst/public-transit-data.htm) |
-  | 3  | Assess burn scars and wildfire impact in Montana using satellite imagery | [Assess burn scars with satellite imagery](https://pro.arcgis.com/en/pro-app/latest/help/analysis/raster-functions/ndvi.htm) |
-  | 4  | Identify groundwater vulnerable areas that need protection | [Identify groundwater vulnerable areas](https://pro.arcgis.com/en/pro-app/latest/help/analysis/geostatistical-analyst/overview-of-geostatistical-analyst.htm) |
-  | 5  | Visualize data on children with elevated blood lead levels while protecting privacy | [De-identify health data for visualization and sharing](https://pro.arcgis.com/en/pro-app/latest/tool-reference/spatial-statistics/multiscale-geographically-weighted-regression.htm) |
+  | 1  | Find heat islands and at-risk populations in Madison, Wisconsin | [Analyze urban heat using kriging](https://learn.arcgis.com/en/projects/analyze-urban-heat-using-kriging/) |
+  | 2  | Find future bus stop locations in Hamilton | [Assess access to public transit](https://learn.arcgis.com/en/projects/assess-access-to-public-transit/) |
+  | 3  | Assess burn scars and wildfire impact in Montana using satellite imagery | [Assess burn scars with satellite imagery](https://learn.arcgis.com/en/projects/assess-burn-scars-with-satellite-imagery/) |
+  | 4  | Identify groundwater vulnerable areas that need protection | [Identify groundwater vulnerable areas](https://learn.arcgis.com/en/projects/identify-groundwater-vulnerable-areas/) |
+  | 5  | Visualize data on children with elevated blood lead levels while protecting privacy | [De-identify health data for visualization and sharing](https://learn.arcgis.com/en/projects/de-identify-health-data-for-visualization-and-sharing/) |
   | 6  | Use animal GPS tracks to model home range and movement over time | [Model animal home range](https://learn.arcgis.com/en/projects/model-animal-home-range/) |
   | 7  | Analyze the impacts of land subsidence on flooding | [Model how land subsidence affects flooding](https://learn.arcgis.com/en/projects/model-how-land-subsidence-affects-flooding/) |
-  | 8  | Find gaps in Toronto fire station service coverage | [Get started with Python in ArcGIS Pro](https://pro.arcgis.com/en/pro-app/latest/arcpy/get-started/what-is-arcpy-.htm) |
-  | 9  | Find the deforestation rate for Rondônia | [Predict deforestation in the Amazon rain forest](https://pro.arcgis.com/en/pro-app/latest/tool-reference/spatial-analyst/how-forest-based-classification-and-regression-works.htm) |
-  | 10 | Analyze the impact of proposed roads on the local environment | [Predict deforestation in the Amazon rain forest](https://pro.arcgis.com/en/pro-app/latest/tool-reference/spatial-analyst/how-forest-based-classification-and-regression-works.htm) |
+  | 8  | Find gaps in Toronto fire station service coverage | [Get started with Python in ArcGIS Pro](https://learn.arcgis.com/en/projects/get-started-with-python-in-arcgis-pro/) |
+  | 9  | Find the deforestation rate for Rondônia | [Predict deforestation in the Amazon rain forest](https://learn.arcgis.com/en/projects/predict-deforestation-in-the-amazon-rain-forest/) |
+  | 10 | Analyze the impact of proposed roads on the local environment | [Predict deforestation in the Amazon rain forest](https://learn.arcgis.com/en/projects/predict-deforestation-in-the-amazon-rain-forest/) |
   | 11 | Create charts in Python to explore coral and sponge distribution around Catalina Island | [Chart coral and sponge distribution](https://learn.arcgis.com/en/projects/chart-coral-and-sponge-distribution-factors-with-python/) |
   | 12 | Find optimal corridors to connect dwindling mountain lion populations | [Build a model to connect mountain lion habitat](https://learn.arcgis.com/en/projects/build-a-model-to-connect-mountain-lion-habitat/) |
   | 13 | Understand the relationship between ocean temperature and salinity at various depths in the South Atlantic Ocean | [SciTools Iris](https://github.com/SciTools/iris) |
@@ -72,7 +75,7 @@ The data being used in this research is avaliable to download at (tbd).
   | 22 | Find optimal corridors to connect dwindling mountain lion populations(3) | [Build a model to connect mountain lion habitat](https://learn.arcgis.com/en/projects/build-a-model-to-connect-mountain-lion-habitat/) |
   | 23 | Assess Open Space to Lower Flood Insurance Cost | [Assess open space to lower flood insurance cost](https://learn.arcgis.com/en/projects/assess-open-space-to-lower-flood-insurance-cost/) |
   | 24 | Provide a de-identified point-level dataset that includes all the variables of interest for each child, as well as their general location | [De-identify health data for visualization and sharing](https://learn.arcgis.com/en/projects/de-identify-health-data-for-visualization-and-sharing/) |
-  | 25 | Create risk maps for transmission, susceptibility, and resource scarcity. Then create a map of risk profiles to help pinpoint targeted intervention areas | [Analyze COVID-19 risk using ArcGIS Pro](https://pro.arcgis.com/en/pro-app/latest/help/analysis/spatial-statistics/hot-spot-analysis.htm) |
+  | 25 | Create risk maps for transmission, susceptibility, and resource scarcity. Then create a map of risk profiles to help pinpoint targeted intervention areas | [Analyze COVID-19 risk using ArcGIS Pro](https://learn.arcgis.com/en/projects/analyze-covid-19-risk-using-arcgis-pro/) |
   | 26 | Use drainage conditions and water depth to calculate groundwater vulnerable areas | [Identify groundwater vulnerable areas](https://learn.arcgis.com/en/projects/identify-groundwater-vulnerable-areas/) |
   | 27 | Identify undeveloped areas from groundwater risk zones | [Identify groundwater vulnerable areas](https://learn.arcgis.com/en/projects/identify-groundwater-vulnerable-areas/) |
   | 28 | Estimate the origin-destination (OD) flows between regions based on the socioeconomic attributes of regions and the mobility data | [ScienceDirect - OD Flow Estimation](https://www.sciencedirect.com/science/article/pii/S2210670724008382) |
@@ -94,10 +97,10 @@ The data being used in this research is avaliable to download at (tbd).
   | 44 | Find gap for Toronto fire station service coverage | [Get started with Python in ArcGIS Pro](https://pro.arcgis.com/en/pro-app/latest/arcpy/get-started/what-is-arcpy-.htm) |
   | 45 | Find optimal corridors to connect dwindling mountain lion populations | [Build a model to connect mountain lion habitat](https://learn.arcgis.com/en/projects/build-a-model-to-connect-mountain-lion-habitat/) |
   | 46 | Identify hot spots for peak crashes | [Determine the most dangerous roads for drivers](https://learn.arcgis.com/en/projects/determine-the-most-dangerous-roads-for-drivers/) |
-  | 47 | Calculate impervious surface area | [Calculate impervious surfaces](https://pro.arcgis.com/en/pro-app/latest/tool-reference/spatial-analyst/impervious-surface.htm) |
-  | 48 | Determine how location impacts interest rates | [Impact of Location on Interest Rates](https://pro.arcgis.com/en/pro-app/latest/tool-reference/spatial-statistics/multiscale-geographically-weighted-regression.htm) |
+  | 47 | Calculate impervious surface area | [Calculate impervious surfaces](https://learn.arcgis.com/en/projects/calculate-impervious-surfaces-from-spectral-imagery/) |
+  | 48 | Determine how location impacts interest rates | [Impact of Location on Interest Rates](https://learn.arcgis.com/en/projects/determine-how-location-impacts-interest-rates/) |
   | 49 | Mapping the Impact of Housing Shortage on Oil Workers | [Homeless in the Badlands](https://learn.arcgis.com/en/projects/homeless-in-the-badlands/arcgis-pro/) |
-  | 50 | Predict seagrass habitats | [Predict seagrass habitats with machine learning](https://pro.arcgis.com/en/pro-app/latest/tool-reference/spatial-analyst/habitat-modeling.htm) |
+  | 50 | Predict seagrass habitats | [Predict seagrass habitats with machine learning](https://learn.arcgis.com/en/projects/predict-seagrass-habitats-with-machine-learning/#prepare-training-data) |
 </details>
 
 
