@@ -126,37 +126,45 @@ Understanding elk movement patterns is critical for wildlife conservation and ma
 <details>
   <summary>Click to expand/collapse Code Generation Prompts</summary>
 
-  ## Task
-  Use animal GPS tracks to model home range to understand where they are and how they move over time.
-
-  ## Instruction
-  Your task is to analyze and visualize elk movements using the provided dataset. The goal is to estimate home ranges and assess habitat preferences using spatial analysis techniques, including Minimum
-  Bounding Geometry (Convex Hull), Kernel Density Estimation, and Density-Based Clustering (DBSCAN).
-  The analysis will generate spatial outputs stored in ""dataset/elk_home_range.gdb"" and ""dataset/"".
-
-  ## Domain Knowledge
-  - **Home range**: The area within which an animal normally lives and fulfills its survival needs.
-  - **Minimum Bounding Geometry (Convex Hull)**: The smallest convex polygon enclosing a set of points.
-  - **Kernel Density Mapping**: Calculates and visualizes feature density in a given area.
-  - **DBSCAN (Density-Based Spatial Clustering of Applications with Noise)**: Clusters points based on density.
-
-  ## Dataset Description
-  Dataset:
-  `dataset/Elk_in_Southwestern_Alberta_2009.geojson`
-  (GeoJSON file storing elk movement points in Southwestern Alberta, 2009)
-
-  ### Columns in Dataset:
-  - `'OBJECTID'`, `'timestamp'`, `'long'`, `'lat'`, `'comments'`, `'external_t'`, `'dop'`, `'fix_type_r'`, `'satellite_'`, `'height'`, `'crc_status'`, `'outlier_ma'`, `'sensor_typ'`, `'individual'`, `'tag_ident'`, `'ind_ident'`, `'study_name'`, `'date'`, `'time'`,`'timestamp_Converted'`, `'summer_indicator'`, `'geometry'`
-
-  ## Key Notes
-  1. **Use automatic reasoning** and clearly explain each subtask before performing it (**ReAct approach**).
-  2. **Use the latest Python packages** for code generation.
-  3. **Put all code under the main function** (No helper functions).
-  4. **Limit output strictly to code** (No extra information).
-  5. **Use only the latest Arcpy functions**.
-
-  ## Expected Output
-  A Python file that implements the workflow following the constraints and guidelines above.
+> As a Geospatial data scientist, generate a python file to solve the proposed task.
+>
+> [Task]:
+> Use animal GPS tracks to model home range to understand where they are and how they move over time.
+>
+> [Instruction]:
+> Your task is to analyze and visualize elk movements using the provided dataset. The goal is to estimate
+> home ranges and assess habitat preferences using spatial analysis techniques, including Minimum
+> Bounding Geometry (Convex Hull), Kernel Density Estimation, and Density-Based Clustering (DBSCAN).
+> The analysis will generate spatial outputs stored in ""dataset/elk_home_range.gdb"" and ""dataset/"".
+>
+> [Domain Knowledge]:
+> ""Home range"" can be defined as the area within which an animal normally lives and finds what it needs
+> for survival. Basically, the home range is the area that an animal travels for its normal daily activities.
+> ""Minimum Bounding Geometry"" creates a feature class containing polygons which represent a specified
+> minimum bounding geometry enclosing each input feature or each group of input features. ""Convex
+> hull"" is the smallest convex polygon that can enclose a group of objects, such as a group of points.
+> ""Kernel Density Mapping"" calculates and visualizes features's density in a given area. ""DBSCAN"",
+> Density-Based Spatial Clustering of Applications with Noise that cluster the points based on density
+> criterion.
+> [Dataset Description]:
+> dataset/Elk_in_Southwestern_Alberta_2009.geojson: geojson files for storing points of Elk
+> movements in Southwestern Alberta 2009.
+>
+> Columns of dataset/Elk_in_Southwestern_Alberta_2009.geojson:
+> 'OBJECTID', 'timestamp', 'long', 'lat', 'comments', 'external_t', 'dop',
+> 'fix_type_r', 'satellite_', 'height', 'crc_status', 'outlier_ma',
+> 'sensor_typ', 'individual', 'tag_ident', 'ind_ident', 'study_name',
+> 'date', 'time', 'timestamp_Converted', 'summer_indicator', 'geometry'
+>
+>
+>
+> [Key Notes]:
+> 1.Use **automatic reasoning** and clearly explain each subtask before performing it (ReAct approach).
+> 2.Using latest python packages for code generation
+> 3.Put all code under main function, no helper functions
+> 4.Limit your output to code, no extra information.
+> 5.Use latest **Arcpy** functions only
+"
 
 </details>
 
