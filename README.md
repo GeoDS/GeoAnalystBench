@@ -138,14 +138,18 @@ Understanding elk movement patterns is critical for wildlife conservation and ma
 > The analysis will generate spatial outputs stored in ""dataset/elk_home_range.gdb"" and ""dataset/"".
 >
 > [Domain Knowledge]:
-> ""Home range"" can be defined as the area within which an animal normally lives and finds what it needs
+> "Home range" can be defined as the area within which an animal normally lives and finds what it needs
 > for survival. Basically, the home range is the area that an animal travels for its normal daily activities.
-> ""Minimum Bounding Geometry"" creates a feature class containing polygons which represent a specified
-> minimum bounding geometry enclosing each input feature or each group of input features. ""Convex
-> hull"" is the smallest convex polygon that can enclose a group of objects, such as a group of points.
-> ""Kernel Density Mapping"" calculates and visualizes features's density in a given area. ""DBSCAN"",
+>
+> "Minimum Bounding Geometry" creates a feature class containing polygons which represent a specified
+> minimum bounding geometry enclosing each input feature or each group of input features.
+>
+> "Convex hull" is the smallest convex polygon that can enclose a group of objects, such as a group of points.
+>
+> "Kernel Density Mapping" calculates and visualizes features's density in a given area. "DBSCAN",
 > Density-Based Spatial Clustering of Applications with Noise that cluster the points based on density
 > criterion.
+>
 > [Dataset Description]:
 > dataset/Elk_in_Southwestern_Alberta_2009.geojson: geojson files for storing points of Elk
 > movements in Southwestern Alberta 2009.
@@ -160,9 +164,13 @@ Understanding elk movement patterns is critical for wildlife conservation and ma
 >
 > [Key Notes]:
 > 1.Use **automatic reasoning** and clearly explain each subtask before performing it (ReAct approach).
+>
 > 2.Using latest python packages for code generation
+>
 > 3.Put all code under main function, no helper functions
+>
 > 4.Limit your output to code, no extra information.
+>
 > 5.Use latest **Arcpy** functions only
 "
 
@@ -198,6 +206,40 @@ to make policies and quick responses for future accidents.
 <details>
   <summary>Click to expand/collapse Code Generation Prompts</summary>
 
+> As a Geospatial data scientist, generate a python file to solve the proposed task.
+>
+> [Task]:
+> Identify hot spots for peak crashes
+>
+> [Instruction]:
+> Your task is identifying hot spots for peak crashes in Brevard County, Florida, 2010 - 2015. The first
+> step is select all the crashes based on peak time zone. Create a copy of selected crashes data. Then,
+> snap the crashes points to the road network and spatial join with the road. Calculate the crash rate
+> based on the joint data and use hot spot analysis to get crash hot spot map as the result.
+>
+> [Domain Knowledge]:
+> We consider traffic between time zone 3pm to 5pm in weekdays as peak. For snap process, the recommend
+> buffer on roads is 0.25 miles. Hot spot analysis looks for high crash rates that cluster close together,
+> accurate distance measurements based on the road network are essential.
+>
+> [Dataset Description]:
+> dataset/crashes.shp: The locations of crashes in Brevard County, Florida between 2010 and 2015.
+>
+> dataset/roads.shp: The road network of Brevard County.
+>
+> dataset/nwswm360ft.swm: Spatial weights matrix file created using the Generate Network Spatial
+> Weights tool and a street network built from Brevard County road polylines.
+>
+> [Key Notes]:
+> 1. Use **automatic reasoning** and clearly explain each subtask before performing it (ReAct approach).
+>
+> 2. Using latest python packages for code generation
+>
+> 3. Put all code under main function, no helper functions
+>
+> 4. Limit your output to code, no extra information.
+>
+> 5. Use latest **Arcpy** functions only
 </details>
 
 ### Results
