@@ -105,10 +105,98 @@ Note that there are tasks with the same name but different id. This typically ha
 
 
 
-## Case Study 1
+## Case Study 1(Task 43): Identification of Home Range and Spatial Clusters from Animal
+Movements
+Understanding elk movement patterns is critical for wildlife conservation and management in the field of animal ecology. The task needs to identify elk home ranges in Southwestern Alberta, 2009 using GPS-tracking locations. In doing so, researchers are able to analyze their space use and movement clusters for elk populations. Understanding the home range of the elk population is essential for ensuring sustainability and stability of the wildlife.
+
+![elk](case_study/figures/elk.png)
+
+### Dataset
+• berling_neighbourhoods.geojson: Geojson file for multipolygons of neighbourhoods in Berling, properties include "neighbourhood" and "neighbourhood_group".
+
+• berlin-listings.csv: CSV file of Berling Airbnb information, with lat and lng of Airbnb.
+
+
+### Prompts
+<details>
+  <summary>Click to expand/collapse Workflow Prompts</summary>
+
+</details>
+
+<details>
+  <summary>Click to expand/collapse Code Generation Prompts</summary>
+
+  ## Task
+  Use animal GPS tracks to model home range to understand where they are and how they move over time.
+
+  ## Instruction
+  Your task is to analyze and visualize elk movements using the provided dataset. The goal is to estimate home ranges and assess habitat preferences using spatial analysis techniques, including Minimum
+  Bounding Geometry (Convex Hull), Kernel Density Estimation, and Density-Based Clustering (DBSCAN).
+  The analysis will generate spatial outputs stored in ""dataset/elk_home_range.gdb"" and ""dataset/"".
+
+  ## Domain Knowledge
+  - **Home range**: The area within which an animal normally lives and fulfills its survival needs.
+  - **Minimum Bounding Geometry (Convex Hull)**: The smallest convex polygon enclosing a set of points.
+  - **Kernel Density Mapping**: Calculates and visualizes feature density in a given area.
+  - **DBSCAN (Density-Based Spatial Clustering of Applications with Noise)**: Clusters points based on density.
+
+  ## Dataset Description
+  Dataset:
+  `dataset/Elk_in_Southwestern_Alberta_2009.geojson`
+  (GeoJSON file storing elk movement points in Southwestern Alberta, 2009)
+
+  ### Columns in Dataset:
+  - `'OBJECTID'`, `'timestamp'`, `'long'`, `'lat'`, `'comments'`, `'external_t'`, `'dop'`, `'fix_type_r'`, `'satellite_'`, `'height'`, `'crc_status'`, `'outlier_ma'`, `'sensor_typ'`, `'individual'`, `'tag_ident'`, `'ind_ident'`, `'study_name'`, `'date'`, `'time'`,`'timestamp_Converted'`, `'summer_indicator'`, `'geometry'`
+
+  ## Key Notes
+  1. **Use automatic reasoning** and clearly explain each subtask before performing it (**ReAct approach**).
+  2. **Use the latest Python packages** for code generation.
+  3. **Put all code under the main function** (No helper functions).
+  4. **Limit output strictly to code** (No extra information).
+  5. **Use only the latest Arcpy functions**.
+
+  ## Expected Output
+  A Python file that implements the workflow following the constraints and guidelines above.
+
+</details>
+
+### Results
+<p align="center">
+  <img src="case_study/figures/elkAI.png" alt="elk">
+</p>
 
 ## Case Study 2
+The second case study is about spatial hotspot analysis of car accidents. The Brevard County in Florida has one of the
+deadliest interstate highways in the United States. This case study aims to identify the spatially distributed hot spots
+along the road network. The dataset includes road network, crash locations from 2010 to 2015, and a network spatial
+weighting matrix. Understanding the hot spots for car accidents is essential for the local transportation department
+to make policies and quick responses for future accidents.
 
+![hotspot](case_study/figures/traffic.png)
+### Dataset
+• roads.shp: The road network of Brevard County.
+
+• crashes.shp: The locations of crashes in Brevard County, Florida between 2010 and 2015.
+
+• nwswm360ft.swm: Spatial weights matrix file created using the Generate Network Spatial Weights tool and a street network built from Brevard County road polylines.
+
+
+### Prompts
+<details>
+  <summary>Click to expand/collapse Workflow Prompts</summary>
+
+</details>
+
+<details>
+  <summary>Click to expand/collapse Code Generation Prompts</summary>
+
+</details>
+
+### Results
+
+<p align="center">
+  <img src="case_study/figures/trafficAI.png" alt="traffic">
+</p>
 
 ## Reference
 
