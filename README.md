@@ -162,7 +162,7 @@ Understanding elk movement patterns is critical for wildlife conservation and ma
 
 ### Results
 <p align="center">
-  <img src="case_study/figures/elkAI.png" alt="elk">
+  <img src="case_study/figures/ElkAI.png" alt="elk">
 </p>
 
 ## Case Study 2
@@ -195,7 +195,7 @@ to make policies and quick responses for future accidents.
 ### Results
 
 <p align="center">
-  <img src="case_study/figures/trafficAI.png" alt="traffic">
+  <img src="case_study/figures/TrafficAI.png" alt="traffic">
 </p>
 
 ## Reference
