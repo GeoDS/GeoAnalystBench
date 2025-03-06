@@ -121,6 +121,76 @@ Understanding elk movement patterns is critical for wildlife conservation and ma
 <details>
   <summary>Click to expand/collapse Workflow Prompts</summary>
 
+  >  As a Geospatial data scientist, you will generate a workflow to a proposed task.
+  >
+  >  [Task]:
+  >  Use animal GPS tracks to model home range to understand where they are and how they move over time.
+  >
+  >  [Instruction]:
+  >  Your task is to analyze and visualize elk movements using the provided dataset. The goal is to estimate
+  >  home ranges and assess habitat preferences using spatial analysis techniques, including Minimum
+  >  Bounding Geometry (Convex Hull), Kernel Density Estimation, and Density-Based Clustering (DBSCAN).
+  >  The analysis will generate spatial outputs stored in "dataset/elk_home_range.gdb" and "dataset/".
+  >
+  >  [Domain Knowledge]:
+  >  "Home range" can be defined as the area within which an animal normally lives and finds what it needs
+  >  for survival. Basically, the home range is the area that an animal travels for its normal daily activities.
+  >  "Minimum Bounding Geometry" creates a feature class containing polygons which represent a specified
+  >  minimum bounding geometry enclosing each input feature or each group of input features. "Convex
+  >  hull" is the smallest convex polygon that can enclose a group of objects, such as a group of points.
+  >  "Kernel Density Mapping" calculates and visualizes features's density in a given area. "DBSCAN",
+  >  Density-Based Spatial Clustering of Applications with Noise that cluster the points based on density
+  >  criterion.
+  >  [Dataset Description]:
+  >  dataset/Elk_in_Southwestern_Alberta_2009.geojson: geojson files for storing points of Elk
+  >  movements in Southwestern Alberta 2009.
+  >
+  >  Columns of dataset/Elk_in_Southwestern_Alberta_2009.geojson:
+  >  'OBJECTID', 'timestamp', 'long', 'lat', 'comments', 'external_t', 'dop',
+  >  'fix_type_r', 'satellite_', 'height', 'crc_status', 'outlier_ma',
+  >  'sensor_typ', 'individual', 'tag_ident', 'ind_ident', 'study_name',
+  >  'date', 'time', 'timestamp_Converted', 'summer_indicator', 'geometry'
+  >
+  >
+  >  [Key Notes]:
+  >  1.Use **automatic reasoning** and clearly explain each step (Chain of Thoughts approach).
+  >
+  >  2.Using **NetworkX* package for visualization.
+  >
+  >  3.Using 'dot' for graph visualization layout.
+  >
+  >  4.Multiple subtasks can be proceeded correspondingly because
+  >  all of their outputs will be inputs for the next subtask.
+  >
+  >  5.Limiting your output to code, no extra information.
+  >
+  >  6.Only codes for workflow, no implementation.
+  >
+  >  [Expected Sample Output Begin]
+  >
+  >  """
+  >
+  >    tasks = [Task1, Task2, Task3]
+  >
+  >    G = nx.DiGraph()
+  >
+  >  for i in range(len(tasks) - 1):
+  >
+  >    G.add_edge(tasks[i], tasks[i + 1])
+  >
+  >    pos = nx.drawing.nx_pydot.graphviz_layout(G, prog="dot")
+  >
+  >    plt.figure(figsize=(15, 8))
+  >
+  >    nx.draw(G, pos, with_labels=True, node_size=3000, node_color='lightblue', font_size=10, font_weight='bold', arrowsize=20)
+  >
+  >    plt.title("Workflow for Analyzing Urban Heat Using Kriging Interpolation", fontsize=14)
+  >
+  >    plt.show()
+  >
+  >  """
+  >
+  >  [Expected Sample Output End]
 </details>
 
 <details>
@@ -200,6 +270,71 @@ to make policies and quick responses for future accidents.
 ### Prompts
 <details>
   <summary>Click to expand/collapse Workflow Prompts</summary>
+
+  > As a Geospatial data scientist, you will generate a workflow to a proposed task.
+
+  > [Task]:
+  > Identify hot spots for peak crashes
+  >
+  > [Instruction]:
+  > Your task is identifying hot spots for peak crashes in Brevard County, Florida, 2010 - 2015. The first
+  > step is select all the crashes based on peak time zone. Create a copy of selected crashes data. Then,
+  > snap the crashes points to the road network and spatial join with the road. Calculate the crash rate
+  > based on the joint data and use hot spot analysis to get crash hot spot map as the result.
+  >
+  > [Domain Knowledge]:
+  > We consider traffic between time zone 3pm to 5pm in weekdays as peak. For snap process, the recommend
+  > buffer on roads is 0.25 miles. Hot spot analysis looks for high crash rates that cluster close together,
+  > accurate distance measurements based on the road network are essential.
+  >
+  > [Dataset Description]:
+  > dataset/crashes.shp: The locations of crashes in Brevard County, Florida between 2010 and 2015.
+
+  > dataset/roads.shp: The road network of Brevard County.
+  >
+  > dataset/nwswm360ft.swm: Spatial weights matrix file created using the Generate Network Spatial
+  >
+  > Weights tool and a street network built from Brevard County road polylines.
+
+  > [Key Notes]:
+  > 1.Use **automatic reasoning** and clearly explain each step (Chain of Thoughts approach).
+  >
+  > 2.Using **NetworkX* package for visualization.
+  >
+  > 3.Using 'dot' for graph visualization layout.
+  >
+  > 4.Multiple subtasks can be proceeded correspondingly because
+  > all of their outputs will be inputs for the next subtask.
+  >
+  > 5.Limiting your output to code, no extra information.
+  >
+  > 6.Only codes for workflow, no implementation.
+
+  >[Expected Sample Output Begin]
+
+  >"""
+  >
+  > tasks = [Task1, Task2, Task3]
+
+  > G = nx.DiGraph()
+  >
+  > for i in range(len(tasks) - 1):
+  >
+  >    G.add_edge(tasks[i], tasks[i + 1])
+  >
+  > pos = nx.drawing.nx_pydot.graphviz_layout(G, prog="dot")
+  >
+  > plt.figure(figsize=(15, 8))
+  >
+  > nx.draw(G, pos, with_labels=True, node_size=3000, node_color='lightblue', font_size=10, font_weight='bold', arrowsize=20)
+  >
+  > plt.title("Workflow for Analyzing Urban Heat Using Kriging Interpolation", fontsize=14)
+  >
+  > plt.show()
+  >
+  >"""
+  >
+  >[Expected Sample Output End]
 
 </details>
 
