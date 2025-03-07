@@ -67,8 +67,8 @@ Note that there are tasks with the same name but different id. This typically ha
   | 14 | Detect persistent periods of high temperature over the past 240 years | [SciTools Iris](https://github.com/SciTools/iris) |
   | 15 | Understand the geographical distribution of Total Electron Content (TEC) in the ionosphere | [SciTools Iris](https://github.com/SciTools/iris) |
   | 16 | Analyze climate change trends in North America using spatiotemporal data | [SciTools Iris](https://github.com/SciTools/iris) |
-  | 17 | Analyze the geographical distribution of fatal car crashes in New York City during 2016 | [NYC Crash Data](https://github.com/ResidentMario/geoplot/blob/master/examples/plot_nyc_collisions_map.py) |
-  | 18 | Analyze street tree species data in San Francisco | [San Francisco Tree Data](https://github.com/ResidentMario/geoplot/blob/master/examples/plot_san_francisco_trees.py) |
+  | 17 | Analyze the geographical distribution of fatal car crashes in New York City during 2016 | [Pointplot of NYC fatal and injurious traffic collisions](https://github.com/ResidentMario/geoplot/blob/master/examples/plot_nyc_collisions_map.py) |
+  | 18 | Analyze street tree species data in San Francisco | [Quadtree of San Francisco street trees](https://github.com/ResidentMario/geoplot/blob/master/examples/plot_san_francisco_trees.py) |
   | 19 | Model spatial patterns of water quality | [Model water quality](https://learn.arcgis.com/en/projects/model-water-quality-using-interpolation/) |
   | 20 | Predict the likelihood of tin-tungsten deposits in Tasmania | [Solve Geosolutions](https://github.com/Solve-Geosolutions/transform_2022) |
   | 21 | Find optimal corridors to connect dwindling mountain lion populations(2) | [Build a model to connect mountain lion habitat](https://learn.arcgis.com/en/projects/build-a-model-to-connect-mountain-lion-habitat/) |
