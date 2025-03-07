@@ -87,9 +87,9 @@ Note that there are tasks with the same name but different id. This typically ha
   | 34 | Estimate the accessibility of roads to rural areas in Japan | [Estimate access to infrastructure](https://learn.arcgis.com/en/projects/estimate-access-to-infrastructure/) |
   | 35 | Calculate landslide potential for communities affected by wildfires | [Landslide Potential Calculation](https://pro.arcgis.com/en/pro-app/latest/tool-reference/spatial-analyst/overview-of-spatial-analyst.htm) |
   | 36 | Compute the change in vegetation before and after a hailstorm with the SAVI index | [Assess hail damage in cornfields with satellite imagery](https://pro.arcgis.com/en/pro-app/latest/tool-reference/spatial-analyst/ndvi.htm) |
-  | 37 | Analyze human sentiments of heat exposure using social media data | [iGuide Notebook](https://platform.i-guide.io/notebooks/6c518fed-0a65-4858-949e-24ee8dc4d85b) |
-  | 38 | Calculate travel time from one location to others in a neighborhood | [iGuide Notebook](https://platform.i-guide.io/notebooks/02f9b712-f4ac-47bc-9382-3c1e0f37b4e3) |
-  | 39 | Train a Geographically Weighted Regression model to predict Georgia's Bachelor's degree rate | [iGuide Notebook](https://platform.i-guide.io/notebooks/d8926bb3-864d-4542-8027-02fc6edc868f) |
+  | 37 | Analyze human sentiments of heat exposure using social media data | [National-level Analysis using Twitter Data](https://platform.i-guide.io/notebooks/6c518fed-0a65-4858-949e-24ee8dc4d85b) |
+  | 38 | Calculate travel time from one location to others in a neighborhood | [Intro to OSM Network Data](https://platform.i-guide.io/notebooks/02f9b712-f4ac-47bc-9382-3c1e0f37b4e3) |
+  | 39 | Train a Geographically Weighted Regression model to predict Georgia's Bachelor's degree rate | [Geographically Weighted Regression Demo](https://platform.i-guide.io/notebooks/d8926bb3-864d-4542-8027-02fc6edc868f) |
   | 40 | Calculate and visualize changes in malaria prevalence | [Visualizing Shrinking Malaria Rates](https://www.esri.com/arcgis-blog/products/arcgis-pro/mapping/visualize-shrinking-malaria-rates-in-africa/) |
   | 41 | Improve campsite data quality using a relationship class | [Improve campsite data](https://learn.arcgis.com/en/projects/improve-campsite-data-quality-using-a-relationship-class/) |
   | 42 | Investigate spatial patterns for Airbnb prices in Berlin | [Determine dangerous roads for drivers](https://learn.arcgis.com/en/projects/determine-the-most-dangerous-roads-for-drivers/) |
