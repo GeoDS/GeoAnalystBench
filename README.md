@@ -46,8 +46,8 @@ There are 50 tasks in the dataset, and this section covers all tasks and their s
 
 Note that there are tasks with the same name but different id. This typically happens when the task is slightly different, or the task is a subset of a larger task.
 
-<details>
-  <summary>Click to expand/collapse Task List</summary>
+<!-- <details>
+  <summary>Click to expand/collapse Task List</summary> -->
 
   | ID | Task Name | Source |
   |----|-----------|--------|
@@ -101,7 +101,7 @@ Note that there are tasks with the same name but different id. This typically ha
   | 48 | Determine how location impacts interest rates | [Impact of Location on Interest Rates](https://learn.arcgis.com/en/projects/determine-how-location-impacts-interest-rates/) |
   | 49 | Mapping the Impact of Housing Shortage on Oil Workers | [Homeless in the Badlands](https://learn.arcgis.com/en/projects/homeless-in-the-badlands/arcgis-pro/) |
   | 50 | Predict seagrass habitats | [Predict seagrass habitats with machine learning](https://learn.arcgis.com/en/projects/predict-seagrass-habitats-with-machine-learning/#prepare-training-data) |
-</details>
+<!-- </details> -->
 
 
 
