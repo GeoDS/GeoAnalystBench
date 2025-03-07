@@ -70,7 +70,7 @@ Note that there are tasks with the same name but different id. This typically ha
   | 17 | Analyze the geographical distribution of fatal car crashes in New York City during 2016 | [Pointplot of NYC fatal and injurious traffic collisions](https://github.com/ResidentMario/geoplot/blob/master/examples/plot_nyc_collisions_map.py) |
   | 18 | Analyze street tree species data in San Francisco | [Quadtree of San Francisco street trees](https://github.com/ResidentMario/geoplot/blob/master/examples/plot_san_francisco_trees.py) |
   | 19 | Model spatial patterns of water quality | [Model water quality](https://learn.arcgis.com/en/projects/model-water-quality-using-interpolation/) |
-  | 20 | Predict the likelihood of tin-tungsten deposits in Tasmania | [Solve Geosolutions](https://github.com/Solve-Geosolutions/transform_2022) |
+  | 20 | Predict the likelihood of tin-tungsten deposits in Tasmania | [Geospatial ML Challenges: A prospectivity analysis example](https://github.com/Solve-Geosolutions/transform_2022) |
   | 21 | Find optimal corridors to connect dwindling mountain lion populations(2) | [Build a model to connect mountain lion habitat](https://learn.arcgis.com/en/projects/build-a-model-to-connect-mountain-lion-habitat/) |
   | 22 | Find optimal corridors to connect dwindling mountain lion populations(3) | [Build a model to connect mountain lion habitat](https://learn.arcgis.com/en/projects/build-a-model-to-connect-mountain-lion-habitat/) |
   | 23 | Assess Open Space to Lower Flood Insurance Cost | [Assess open space to lower flood insurance cost](https://learn.arcgis.com/en/projects/assess-open-space-to-lower-flood-insurance-cost/) |
@@ -382,6 +382,8 @@ to make policies and quick responses for future accidents.
 <p align="center">
   <img src="case_study/figures/TrafficAI.png" alt="traffic">
 </p>
+
+## Acknowledgement
 
 ## Reference
 
