@@ -383,7 +383,7 @@ to make policies and quick responses for future accidents.
   <img src="case_study/figures/TrafficAI.png" alt="traffic">
 </p>
 
-## Acknowledgement  
+## Acknowledgement
 
 ## Reference
 

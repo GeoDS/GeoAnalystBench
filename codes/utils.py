@@ -67,7 +67,7 @@ def find_task_length(outline):
         return 0
     return max(number_list)
 
-def call_api(api_type, prompt_file, output_file, model, ollama_model='deepseek-r1:latest'):
+def call_api(api_type, prompt_file, output_file, model, ollama_model='deepseek-r1:latest', temperature=0.7):
     '''
     api_type: 'workflow' or 'code'
     prompt_file: the path to the csv file containing the prompts
@@ -90,13 +90,13 @@ def call_api(api_type, prompt_file, output_file, model, ollama_model='deepseek-r
         prompt = content['prompt_content']
         for i in range(3):
             if model == 'gpt4':
-                response = call_gpt(prompt)
+                response = call_gpt(prompt, temperature)
             elif model == 'claude':
-                response = call_claude(prompt)
+                response = call_claude(prompt, temperature)
             elif model == 'gemini':
-                response = call_gemini(prompt)
+                response = call_gemini(prompt, temperature)
             elif model == 'ollama':
-                response = call_ollama(prompt, ollama_model)
+                response = call_ollama(prompt, ollama_model, temperature)
             responses.append(response)
         with open(output_file, "a", newline='') as f:
             writer = csv.writer(f)
@@ -116,11 +116,11 @@ def call_api(api_type, prompt_file, output_file, model, ollama_model='deepseek-r
                     writer.writerow([content['task_id'], str(content['task_id'])+api_type+str(i), type, api_type, content['Arcpy'], model, response, 'none'])
 
 
-def call_ollama(prompt, model='deepseek-r1:latest'):
+def call_ollama(prompt, model='deepseek-r1:latest', temperature=0.7):
     # call ollama with different open source models
     response = ollama.generate(
         model=model,
-        options={"temperature": 0.7},
+        options={"temperature": temperature},
         prompt=prompt,
     )
     result = response.response
