@@ -4,19 +4,9 @@ from langchain_anthropic import ChatAnthropic
 from langchain_google_genai import GoogleGenerativeAI
 import csv
 import pandas as pd
+import ollama
 def extract_task_list(long_string):
     """Extract the task list from a long string."""
-    match = re.search(r"tasks?\s*=\s*\[(.*?)\]", long_string, re.DOTALL | re.IGNORECASE)
-    if match:
-        task_list_str = match.group(1)
-        task_list = [task.strip().strip('"\'') for task in task_list_str.split(',')]
-        return task_list
-
-    return []
-
-def extract_task_list2(long_string):
-    """Extract the task list from a long string."""
-    #split by \n and remove empty lines, then remove numbered order 1. 2. 3. etc.
     lines = long_string.split("\n")
     lines = [line.strip() for line in lines if line.strip()]
     lines = [line for line in lines if not re.match(r'^\d+\.', line)]
@@ -77,7 +67,7 @@ def find_task_length(outline):
         return 0
     return max(number_list)
 
-def call_api(api_type, prompt_file, output_file, model):
+def call_api(api_type, prompt_file, output_file, model, ollama_model='deepseek-r1:latest'):
     '''
     api_type: 'workflow' or 'code'
     prompt_file: the path to the csv file containing the prompts
@@ -105,6 +95,8 @@ def call_api(api_type, prompt_file, output_file, model):
                 response = call_claude(prompt)
             elif model == 'gemini':
                 response = call_gemini(prompt)
+            elif model == 'ollama':
+                response = call_ollama(prompt, ollama_model)
             responses.append(response)
         with open(output_file, "a", newline='') as f:
             writer = csv.writer(f)
@@ -122,3 +114,17 @@ def call_api(api_type, prompt_file, output_file, model):
             elif api_type == 'code':
                 for i, response in enumerate(responses):
                     writer.writerow([content['task_id'], str(content['task_id'])+api_type+str(i), type, api_type, content['Arcpy'], model, response, 'none'])
+
+
+def call_ollama(prompt, model='deepseek-r1:latest'):
+    # call ollama with different open source models
+    response = ollama.generate(
+        model=model,
+        options={"temperature": 0.7},
+        prompt=prompt,
+    )
+    result = response.response
+    if '</think>' in result:
+        return result.split("</think>")[1].strip() # for deepseek-r1:latest
+    else:
+        return result
