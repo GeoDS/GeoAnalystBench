@@ -39,7 +39,7 @@ The dataset includes the following information:
 
 The dataset is avaliable to download at [GeoAnalystBench](https://github.com/GeoDS/GeoAnalystBench/blob/master/dataset/GeoAnalystBench.csv).
 
-The data being used in this research is avaliable to download at (tbd).
+The data being used in this research is avaliable to download at [Google Drive](https://drive.google.com/drive/u/0/folders/1GhgxWkNVh4FTgS1RETgvbstBqx0Q9ezp).
 
 ## Tasks
 There are 50 tasks in the dataset, and this section covers all tasks and their sources. For more details, please refer to the [GeoAnalystBench](https://github.com/GeoDS/GeoAnalystBench/blob/master/dataset/GeoAnalystBench.csv).
