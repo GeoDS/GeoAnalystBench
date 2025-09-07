@@ -6,7 +6,7 @@ GeoAnalystBench: A GeoAI benchmark for assessing large language models for spati
 
 Recent advances in Geospatial Artificial Intelligence (GeoAI) have been driven by generative AI and foundation models. While powerful geoprocessing tools are widely available in Geographic Information Systems (GIS), automating these workflows using AI-driven Python scripting remains a challenge, especially for non-expert users.
 
-This project explores the capabilities of Large Language Models (LLMs) such as ChatGPT, Claude, Gemini, Llama, and DeepSeek in automating GIS workflows. We introduce a benchmark of 50 geoprocessing tasks to evaluate these models' ability to generate Python functions from natural language instructions.
+This project explores the capabilities of Large Language Models (LLMs) such as ChatGPT, Claude, Gemini, Llama, and DeepSeek in automating GIS workflows. We introduce a benchmark of well-designed 50 geoprocessing tasks carefully validated by GIS domain experts to evaluate these models' ability to generate Python functions from natural language instructions.
 
 Our findings reveal that proprietary LLMs achieve higher success rates (>90%) and produce workflows more aligned with human-designed implementations than open-source models. The results suggest that integrating proprietary LLMs with ArcPy is a more effective approach for specialized GIS workflows.
 
@@ -384,6 +384,7 @@ to make policies and quick responses for future accidents.
 </p>
 
 ## Acknowledgement
+We acknowledge the funding support from the National Science Foundation funded AI institute [Grant No. 2112606] for Intelligent Cyberinfrastructure with Computational Learning in the Environment (ICICLE). Any opinions, findings, and conclusions or recommendations expressed in this material are those of the author(s) and do not necessarily reflect the views of the funder(s). 
 
 ## Reference
 
