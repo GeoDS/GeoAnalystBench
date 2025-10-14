@@ -3,6 +3,22 @@ GeoAnalystBench: A GeoAI benchmark for assessing large language models for spati
 
 ## Automating GIS Workflows with Large Language Models (LLMs)
 
+## Reference
+
+Zhang, Q., Gao, S., Wei, C., Zhao, Y., Nie, Y., Chen, Z., Chen, S., Su, Y., & Sun, H. (2025).. arXiv preprint arXiv:2509.05881. [ GeoAnalystBench: A GeoAI benchmark for assessing large language models for spatial analysis workflow and code generation.]([https://doi.org/10.1073/pnas.2100201118](https://onlinelibrary.wiley.com/doi/10.1111/tgis.70135?af=R)) Transactions in GIS, 29(7), e70135.
+
+
+```
+@article{zhang2025geoanalystbench,
+  title={GeoAnalystBench: A GeoAI benchmark for assessing large language models for spatial analysis workflow and code generation},
+  author={Zhang, Qianheng and Gao, Song and Wei, Chen and Zhao, Yibo and Nie, Ying and Chen, Ziru and Chen, Shijie and Su, Yu and Sun, Huan},
+  journal={Transactions in GIS},
+  volume={29},
+  number={7},
+  pages={e70135},
+  year={2025}
+}
+```
 
 Recent advances in Geospatial Artificial Intelligence (GeoAI) have been driven by generative AI and foundation models. While powerful geoprocessing tools are widely available in Geographic Information Systems (GIS), automating these workflows using AI-driven Python scripting remains a challenge, especially for non-expert users.
 
@@ -385,6 +401,3 @@ to make policies and quick responses for future accidents.
 
 ## Acknowledgement
 We acknowledge the funding support from the National Science Foundation funded AI institute [Grant No. 2112606] for Intelligent Cyberinfrastructure with Computational Learning in the Environment (ICICLE). Any opinions, findings, and conclusions or recommendations expressed in this material are those of the author(s) and do not necessarily reflect the views of the funder(s). 
-
-## Reference
-
