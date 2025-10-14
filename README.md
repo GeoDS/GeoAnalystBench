@@ -5,7 +5,7 @@ GeoAnalystBench: A GeoAI benchmark for assessing large language models for spati
 
 ## Reference
 
-Zhang, Q., Gao, S., Wei, C., Zhao, Y., Nie, Y., Chen, Z., Chen, S., Su, Y., & Sun, H. (2025). (https://onlinelibrary.wiley.com/doi/10.1111/tgis.70135) [GeoAnalystBench: A GeoAI benchmark for assessing large language models for spatial analysis workflow and code generation.] Transactions in GIS, 29(7), e70135.
+Zhang, Q., Gao, S., Wei, C., Zhao, Y., Nie, Y., Chen, Z., Chen, S., Su, Y., & Sun, H. (2025). [GeoAnalystBench: A GeoAI benchmark for assessing large language models for spatial analysis workflow and code generation.](https://onlinelibrary.wiley.com/doi/10.1111/tgis.70135) Transactions in GIS, 29(7), e70135.
 
 
 ```
