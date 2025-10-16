@@ -121,7 +121,7 @@ Note that there are tasks with the same name but different id. This typically ha
 
 
 
-## Case Study 1(Task 43): Identification of Home Range and Spatial Clusters from Animal
+## Case Study 1 (Task 43): Identification of Home Range and Spatial Clusters from Animal
 Movements
 Understanding elk movement patterns is critical for wildlife conservation and management in the field of animal ecology. The task needs to identify elk home ranges in Southwestern Alberta, 2009 using GPS-tracking locations. In doing so, researchers are able to analyze their space use and movement clusters for elk populations. Understanding the home range of the elk population is essential for ensuring sustainability and stability of the wildlife.
 
@@ -267,7 +267,7 @@ Understanding elk movement patterns is critical for wildlife conservation and ma
   <img src="case_study/figures/ElkAI.png" alt="elk">
 </p>
 
-## Case Study 2
+## Case Study 2 (Task 46): Spatial Hotspot Analysis of Car Accidents
 The second case study is about spatial hotspot analysis of car accidents. The Brevard County in Florida has one of the
 deadliest interstate highways in the United States. This case study aims to identify the spatially distributed hot spots
 along the road network. The dataset includes road network, crash locations from 2010 to 2015, and a network spatial
