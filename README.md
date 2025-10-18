@@ -29,7 +29,7 @@ Our findings reveal that proprietary LLMs achieve higher success rates (>90%) an
 By providing benchmarks and insights, this study contributes to the development of optimized prompting strategies, future GIS automation tools, and hybrid GeoAI workflows that combine LLMs with human expertise.
 ![GeoAnalystBench](./figures/framework.png)
 ## Key Features:
-- **Benchmark for GIS Automation**: Evaluation of LLMs on 50 geoprocessing tasks.
+- **Benchmark for GIS Automation**: Evaluation of LLMs on 50 real-world geoprocessing tasks.
 - **LLM Performance Comparison**: Validity and similarity analysis of generated workflows.
 - **Open-source Versus Proprietary Models**: Comparison of performance and reliability.
 
