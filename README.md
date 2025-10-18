@@ -40,20 +40,20 @@ from GIS platforms, software, online tutorials, and academic literature. Each ta
 the simplest task still involves data loading, applying at least one spatial analysis tool, and saving the final outputs. The
 list of those tasks with their sources are included in the [Tasks](#tasks) section below.
 
-The dataset includes the following information:
+The geoprocessing task dataset includes the following information:
 | Key Column                | Description |
 |---------------------------|-------------|
 | ID                        | Unique identifier for each task |
 | Open or Closed Source     | Use open source or closed source library |
 | Task                      | Brief description of the task |
-| Instruction               | Natural language instruction for completing the task |
+| Instruction/Prompt        | Natural language instruction for completing the task |
 | Domain Knowledge          | Domain-specific knowledge related to task |
 | Dataset Description       | Data name, format, descriptions, and key columns |
 | Human Designed Workflow   | Numbered list of human-designed workflow |
 | Task Length               | The length of the human-designed workflow |
-| Code                      | Human-designed code for the task and dataset |
+| Code                      | Human-designed Python code for the task and dataset |
 
-The dataset is avaliable to download at [GeoAnalystBench](https://github.com/GeoDS/GeoAnalystBench/blob/master/dataset/GeoAnalystBench.csv).
+The geoprocessing task dataset is avaliable to download at [GeoAnalystBench](https://github.com/GeoDS/GeoAnalystBench/blob/master/dataset/GeoAnalystBench.csv).
 
 The data being used in this research is avaliable to download at [Google Drive](https://drive.google.com/drive/u/0/folders/1GhgxWkNVh4FTgS1RETgvbstBqx0Q9ezp).
 
