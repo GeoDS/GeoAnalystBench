@@ -24,7 +24,7 @@ Recent advances in Geospatial Artificial Intelligence (GeoAI) have been driven b
 
 This project explores the capabilities of Large Language Models (LLMs) such as ChatGPT, Claude, Gemini, Llama, and DeepSeek in automating GIS workflows. We introduce a benchmark of well-designed 50 real-world geoprocessing tasks carefully validated by GIS domain experts to evaluate these models' ability to generate Python functions from natural language instructions.
 
-Our findings reveal that proprietary LLMs achieve higher success rates (>90%) and produce workflows more aligned with human-designed implementations than open-source models. The results suggest that integrating proprietary LLMs with ArcPy is a more effective approach for specialized GIS workflows.
+Our findings reveal that proprietary LLMs achieve higher success rates (>90%) and produce workflows more aligned with human-designed implementations than smaller parameter-sized open-source models. The results suggest that integrating proprietary LLMs with ArcPy is a more effective approach for specialized GIS workflows.
 
 By providing benchmarks and insights, this study contributes to the development of optimized prompting strategies, future GIS automation tools, and hybrid GeoAI workflows that combine LLMs with human expertise.
 ![GeoAnalystBench](./figures/framework.png)
