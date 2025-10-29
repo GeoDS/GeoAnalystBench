@@ -22,7 +22,7 @@ Zhang, Q., Gao, S., Wei, C., Zhao, Y., Nie, Y., Chen, Z., Chen, S., Su, Y., & Su
 
 Recent advances in Geospatial Artificial Intelligence (GeoAI) have been driven by generative AI and foundation models. While powerful geoprocessing tools are widely available in Geographic Information Systems (GIS), automating these workflows using AI-driven Python scripting remains a challenge, especially for non-expert users.
 
-This project explores the capabilities of Large Language Models (LLMs) such as ChatGPT, Claude, Gemini, Llama, and DeepSeek in automating GIS workflows. We introduce a benchmark of well-designed 50 real-world geoprocessing tasks carefully validated by GIS domain experts to evaluate these models' ability to generate Python functions from natural language instructions.
+This project explores the capabilities of Large Language Models (LLMs) such as ChatGPT, Claude, Gemini, Llama, and DeepSeek in automating GIS workflows. We introduce a benchmark of well-designed 50 real-world geoprocessing tasks carefully validated by GIS domain experts to evaluate these models' ability to generate spatial analysis workflow and Python functions from natural language instructions.
 
 Our findings reveal that proprietary LLMs achieve higher success rates (>90%) and produce workflows more aligned with human-designed implementations than smaller parameter-sized open-source models. The results suggest that integrating proprietary LLMs with ArcPy is a more effective approach for specialized GIS workflows.
 
