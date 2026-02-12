@@ -74,7 +74,7 @@ def model():
 
 if __name__ == '__main__':
     model()"
-2,T,Detecting and quantifying patterns,Finding the best locations and paths,,"Find future bus stop locations in Hamilton, Tennessee","Your task is performing analysis on public transit access in Hamilton County Tennessee. The goal is to map out existing bus stops‘s service area with enriched map layers for different census blocks, including poverty, population density, and accessibility to a vehicle. You should overlay the three demographical factors with the bus service area using different transparent color schemes. Visualizing the resulting data as ""pred_results/transit_access.png"".","The Overlay toolset contains tools to overlay multiple feature classes to combine, erase, modify, or update spatial features, resulting in a new feature class. The ""overlay"" function manipulations two feature layers using the language of sets, intersection, union, difference and symmetrical difference.","dataset/BusServiceArea.geojson: Geojson file stores the bus stop service areas in polygons
+2,T,Detecting and quantifying patterns,Finding the best locations and paths,,"Find future bus stop locations in Hamilton, Tennessee","Your task is performing analysis on public transit access in Hamilton County Tennessee. The goal is to map out existing bus stops鈥榮 service area with enriched map layers for different census blocks, including poverty, population density, and accessibility to a vehicle. You should overlay the three demographical factors with the bus service area using different transparent color schemes. Visualizing the resulting data as ""pred_results/transit_access.png"".","The Overlay toolset contains tools to overlay multiple feature classes to combine, erase, modify, or update spatial features, resulting in a new feature class. The ""overlay"" function manipulations two feature layers using the language of sets, intersection, union, difference and symmetrical difference.","dataset/BusServiceArea.geojson: Geojson file stores the bus stop service areas in polygons
 
 Columns of dataset/BusServiceArea.geojson:
    OBJECTID FacilityID  ...   Shape_Area, geometry
@@ -151,15 +151,15 @@ dataset/G_2015.tif: Raster file of satellite imageries in 2015, taken by Landsat
 No Preview
 
 Landsat 8 satellite imageries have 9 bands: 
-Band 1 Coastal Aerosol (0.43 - 0.45 µm) 30 m
-Band 2 Blue (0.450 - 0.51 µm) 30 m
-Band 3 Green (0.53 - 0.59 µm) 30 m
-Band 4 Red (0.64 - 0.67 µm) 30 m
-Band 5 Near-Infrared (0.85 - 0.88 µm) 30 m
-Band 6 SWIR 1(1.57 - 1.65 µm) 30 m
-Band 7 SWIR 2 (2.11 - 2.29 µm) 30 m
-Band 8 Panchromatic (PAN) (0.50 - 0.68 µm) 15 m
-Band 9 Cirrus (1.36 - 1.38 µm) 30 m","1. Load dataset
+Band 1 Coastal Aerosol (0.43 - 0.45 碌m) 30 m
+Band 2 Blue (0.450 - 0.51 碌m) 30 m
+Band 3 Green (0.53 - 0.59 碌m) 30 m
+Band 4 Red (0.64 - 0.67 碌m) 30 m
+Band 5 Near-Infrared (0.85 - 0.88 碌m) 30 m
+Band 6 SWIR 1(1.57 - 1.65 碌m) 30 m
+Band 7 SWIR 2 (2.11 - 2.29 碌m) 30 m
+Band 8 Panchromatic (PAN) (0.50 - 0.68 碌m) 15 m
+Band 9 Cirrus (1.36 - 1.38 碌m) 30 m","1. Load dataset
 2. Filter(2014 bands)
 3. Filter(2015 bands)
 4. Calculate NBR
@@ -180,7 +180,7 @@ def model():
     landsat_2014 = rasterio.open('/dataset/G_2014.tif')
     landsat_2015 = rasterio.open('/dataset/G_2015.tif')
 
-    #Landsat 8-9: NBR = (Band 5 – Band 7) / (Band 5 + Band 7)
+    #Landsat 8-9: NBR = (Band 5 鈥?Band 7) / (Band 5 + Band 7)
     nir_2014 = landsat_2014.read(5)
     swir_2014 = landsat_2014.read(7)
     nir_2015 = landsat_2015.read(5)
@@ -245,7 +245,7 @@ vulnerable_areas = drainage_conditions * 5 + water_depth * 4
 risk_zones = vulnerable_areas * 8 + land_cover * 10
 
 For final conditional evaluation:
-Undeveloped areas in the high risk zones (risk_zones > 100) need more protection. Seek for the areas in land_cover masking high risk zone, use the following rule: where_clause=""Class IN ('Deciduous Forest', 'Emergent Herbaceous Wetlands', 'Hay/Pasture', 'Herbaceous', 'Mixed Forest', 'Shrub/Scrub', 'Woody Wetlands', 'Barren Land')""","dataset/mc_soils.shp: In this shapefile, three fields are important in groundwater analysis: Drainage Class – Dominant Conditions, Hydrologic Group – Dominant Conditions, and Water Table Depth – Annual – Minimum. Drainage conditions describe the movement of water through soil. It explains how water infiltrates into the ground based on the hydrologic group. There are four hydrologic soil groups (A, B, C, D) that are defined based on runoff potentials, hydraulic conductivity, and depth to any layer. In some instances, soils may be assigned dual hydrologic groups [(A/D, B/D, C/D). Finally, the water table depth measures the distance to the water table, usually in centimeters.
+Undeveloped areas in the high risk zones (risk_zones > 100) need more protection. Seek for the areas in land_cover masking high risk zone, use the following rule: where_clause=""Class IN ('Deciduous Forest', 'Emergent Herbaceous Wetlands', 'Hay/Pasture', 'Herbaceous', 'Mixed Forest', 'Shrub/Scrub', 'Woody Wetlands', 'Barren Land')""","dataset/mc_soils.shp: In this shapefile, three fields are important in groundwater analysis: Drainage Class 鈥?Dominant Conditions, Hydrologic Group 鈥?Dominant Conditions, and Water Table Depth 鈥?Annual 鈥?Minimum. Drainage conditions describe the movement of water through soil. It explains how water infiltrates into the ground based on the hydrologic group. There are four hydrologic soil groups (A, B, C, D) that are defined based on runoff potentials, hydraulic conductivity, and depth to any layer. In some instances, soils may be assigned dual hydrologic groups [(A/D, B/D, C/D). Finally, the water table depth measures the distance to the water table, usually in centimeters.
 Key Fields:
 'FID', 'Shape', 'AREASYMBOL', 'SPATIALVER', 'MUSYM', 'MUKEY', 'drclassdcd', 'hydgrpdcd', 'wdepannmin'
 
@@ -670,9 +670,9 @@ def main():
 
 if __name__ == '__main__':
     main()"
-9,T,"Measuring size, shape, and distribution",,,Find the deforestation rate for Rondônia,"Your task is finding the deforestation rate for Brazilian state of Rondônia. The goal is calculating the deforestation area percentage in the Rondônia within the buffer zone of 5.5km around road layers. Save the percentage result in a CSV file named ""pred_results/deforestation_rate.csv"" with a column title percentage_deforestation.","""Buffer"" creates buffer polygons or zones around input geometry features to a specified distance in GIS. 
+9,T,"Measuring size, shape, and distribution",,,Find the deforestation rate for Rond么nia,"Your task is finding the deforestation rate for Brazilian state of Rond么nia. The goal is calculating the deforestation area percentage in the Rond么nia within the buffer zone of 5.5km around road layers. Save the percentage result in a CSV file named ""pred_results/deforestation_rate.csv"" with a column title percentage_deforestation.","""Buffer"" creates buffer polygons or zones around input geometry features to a specified distance in GIS. 
 
-Clip points, lines, or polygon geometries to the mask extent.  ""Clip"" is used to cut out a piece of one map layer using one or more of the features in another layer. ","dataset/roads.geojson: Linestring Geojson file storing the current road map in Brazilian state of Rondônia.
+Clip points, lines, or polygon geometries to the mask extent.  ""Clip"" is used to cut out a piece of one map layer using one or more of the features in another layer. ","dataset/roads.geojson: Linestring Geojson file storing the current road map in Brazilian state of Rond么nia.
 Status columns include values such as ""Official"", ""Unofficial"".
 Column of dataset/roads.geojson:
 OBJECTID        Name        Status        Shape_Length        geometry
@@ -714,12 +714,12 @@ def main():
 
 if __name__ == ""__main__"":
     main()"
-10,T,Making predictions,"Measuring size, shape, and distribution",,Analyze the potential impact of proposed roads on local environment,"Your task is predicting the effect of future proposed roads on the deforestation of in the Brazilian state of Rondônia. A planned road network will be added to Rondônia, create a buffer zone of 5.5km around the new roads. Visualize the change created by the roads with the planned roads, existing roads, deforested area, and protected forest along with the boundary of Rondônia. Save the output as ""pred_results/predictedRiskyArea.png"".
+10,T,Making predictions,"Measuring size, shape, and distribution",,Analyze the potential impact of proposed roads on local environment,"Your task is predicting the effect of future proposed roads on the deforestation of in the Brazilian state of Rond么nia. A planned road network will be added to Rond么nia, create a buffer zone of 5.5km around the new roads. Visualize the change created by the roads with the planned roads, existing roads, deforested area, and protected forest along with the boundary of Rond么nia. Save the output as ""pred_results/predictedRiskyArea.png"".
 ","""Buffer"" creates buffer polygons or zones around input geometry features to a specified distance.
 
 Clip points, lines, or polygon geometries to the mask extent.  ""Clip"" is used to cut out a piece of one map layer using one or more of the features in another layer.
 
-The Overlay toolset contains tools to overlay multiple feature classes to combine, erase, modify, or update spatial features, resulting in a new feature class. The ""overlay"" function manipulations two feature layers using the language of sets 鈥 intersection, union, difference and symmetrical difference.","dataset/roads.geojson: Linestring Geojson file storing the current road map in Brazilian state of Rondônia.
+The Overlay toolset contains tools to overlay multiple feature classes to combine, erase, modify, or update spatial features, resulting in a new feature class. The ""overlay"" function manipulations two feature layers using the language of sets 閳?intersection, union, difference and symmetrical difference.","dataset/roads.geojson: Linestring Geojson file storing the current road map in Brazilian state of Rond么nia.
 Status columns include values such as ""Official"", ""Unofficial"".
 Column of dataset/roads.geojson:
 OBJECTID        Name        Status        Shape_Length        geometry
@@ -739,9 +739,7 @@ OBJECTID        Shape_Length        Name        Status        geometry","1. Load
 2. Buffer
 3. Clip
 4. Overlay
-5. Visulization",5,"deforestation_predict.py
-
-import geopandas as gpd
+5. Visulization",5,"import geopandas as gpd
 import matplotlib.pyplot as plt
 
 def model():
@@ -811,6 +809,7 @@ def main():
     coral_sponge_gdf = coral_sponge_gdf.to_crs(epsg=4326)
 
     # Calculate the slope and aspect(in degrees)
+    print(imarray)
     grad_y, grad_x = np.gradient(imarray, imarray.shape[0], imarray.shape[1])
     slope = np.arctan(np.sqrt(grad_x**2 + grad_y**2)) * (180 / np.pi)
     aspect = np.arctan2(-grad_y, grad_x) * (180 / np.pi)
@@ -857,7 +856,6 @@ def main():
     plt.ylabel('Mean Slope (degrees)')
     plt.title('Mean Slope per Species')
     plt.xticks(rotation=45, ha='right')
-    plt.savefig('mean_slope_per_species.png')
 
     plt.subplot(1, 2, 2)
     plt.bar(mean_slope_aspect['VernacularNameCategory'], mean_slope_aspect['aspect'], color='g')
@@ -865,7 +863,6 @@ def main():
     plt.ylabel('Mean Aspect (degrees)')
     plt.title('Mean Aspect per Species')
     plt.xticks(rotation=45, ha='right')
-    plt.savefig('mean_aspect_per_species.png')
 
     # Show plots
     plt.tight_layout()
@@ -1890,7 +1887,7 @@ The reclassification of drainage_conditions is [[1, 3], [2, 1], [3, 4], [4, 5], 
 The reclassification of water_depth is [[0, 10, 5], [10, 33, 4], [33, 61, 3], [61, 80, 2], [80, 92, 1]].
 
 For weighted overlay:
-vulnerable_areas = drainage_conditions * 5 + water_depth * 4","dataset/mc_soils.shp: In this shapefile, three fields are important in groundwater analysis: Drainage Class – Dominant Conditions, Hydrologic Group – Dominant Conditions, and Water Table Depth – Annual – Minimum.
+vulnerable_areas = drainage_conditions * 5 + water_depth * 4","dataset/mc_soils.shp: In this shapefile, three fields are important in groundwater analysis: Drainage Class 鈥?Dominant Conditions, Hydrologic Group 鈥?Dominant Conditions, and Water Table Depth 鈥?Annual 鈥?Minimum.
 Key Fields:
 'FID', 'Shape', 'AREASYMBOL', 'SPATIALVER', 'MUSYM', 'MUKEY', 'drclassdcd', 'hydgrpdcd', 'wdepannmin'
 
@@ -2146,13 +2143,13 @@ print(""Improved Mean Squared Error on Test Data:"", mse)
 
 
 "
-29,F,Finding the best locations and paths,Making predictions,,Calculate Travel Time for a Tsunami,"To calculate tsunami travel time, set up your project with bathymetric and coastal data, then identify the tsunami origin. Simulate wave travel over the bathymetric surface to create an arrival time map. Visualize and analyze the results, adjust for accuracy, and prepare a report to aid in preparedness and response planning.","To calculate tsunami speed using √(g*d) , where d is ocean depth, you'll need positive depth values. Since AtlanticDEM has negative values for ocean depths (below sea level), you'll modify the expression to invert these values, making ocean areas positive for accurate calculations.
+29,F,Finding the best locations and paths,Making predictions,,Calculate Travel Time for a Tsunami,"To calculate tsunami travel time, set up your project with bathymetric and coastal data, then identify the tsunami origin. Simulate wave travel over the bathymetric surface to create an arrival time map. Visualize and analyze the results, adjust for accuracy, and prepare a report to aid in preparedness and response planning.","To calculate tsunami speed using 鈭?g*d) , where d is ocean depth, you'll need positive depth values. Since AtlanticDEM has negative values for ocean depths (below sea level), you'll modify the expression to invert these values, making ocean areas positive for accurate calculations.
 Geodetic Densify creates new features by replacing the segments of the input features with densified approximations of geodesic segments. 
 Extract by Mask tool is used to extract cell values from a raster using the shape of a feature or another raster as a mask.","dataset/AtlanticDEM.lyrx: A DEM layer representing Atlantic Ocean bathymetry, essential for analyzing how ocean depth affects tsunami wave propagation. Raster data
 dataset/Tsunami Paths.lyrx:
 A layer showing precomputed tsunami travel paths and travel times, used to visualize and analyze tsunami wave routes and their impact on coastal areas. Attributes: OBJECTID, Shape, lengthkm, Shape_Length, Route","1. Load Data
 2. Invert AtlanticDEM values to make ocean depths positive.
-3. Use the Raster Calculator to apply the formula √(g*d)
+3. Use the Raster Calculator to apply the formula 鈭?g*d)
 4. Mark tsunami origin points.
 5.Use geodesic distance tools to map tsunami travel paths.
 6.Derive travel times based on calculated speeds.
@@ -2885,7 +2882,7 @@ arcpy.management.ApplySymbologyFromLayer(field_boundaries, r""Symbology.lyrx"")
 arcpy.management.SaveToLayerFile(field_boundaries, r""Field_Boundaries_Results.lyrx"", ""ABSOLUTE"")"
 37,T,Determining how places are related,Detecting and quantifying patterns,,Analyze of human sentiments of heat exposure using social media data,"Your task is to do a national-scale analysis of human sentiments of heat exposure using location-based social media Twitter data. Based on a heat vocab dictionary file, you will construct a dictionary to store the values of each vocabulary. You will retrieve all weather related tweets from the loaded json file. Then you will assign the tweets to counties in USA. You will count the number of tweet to sum their values and find the mean to be the heat exposure value. You will also have to normalize the heat exposure values with max and min. Finally, visualize the results in a choropleth map using natural break and save the results as ""pred_results/US_heat_exposure_map.png"".","Human Sentiments: Emotions, opinions, and attitude from posts on social media platform, which reflects people's sentiments.
 
-Heat Exposure：Extreme heat related weather condition.","dataset/data20000.txt: Stores 20000 weather related vocabularies along with their sentiment scores in the form of ""term: 0.42"".
+Heat Exposure锛欵xtreme heat related weather condition.","dataset/data20000.txt: Stores 20000 weather related vocabularies along with their sentiment scores in the form of ""term: 0.42"".
 
 dataset/12500-tweets-2021-09-24_01-48-23.json: Json file that stores 12500 tweets in United states on 2021/09/25. Some of the tweets are geotagged that it has longitudes and latitudes.
 
@@ -3167,11 +3164,11 @@ def main():
 
 if __name__ == ""__main__"":
     main()"
-40,F,"Measuring size, shape, and distribution",,,Calculate and visualize changes in malaria prevalence,"Your task is to analyze changes in malaria prevalence among children aged 2–10 in Sub-Saharan Africa from 2000 to 2015. Using raster data from the Malaria Atlas Project, calculate the difference between the prevalence rates in 2000 and 2015 using the Minus raster function. Then, visualize the change in malaria prevalence with a diverging color scheme and adjust the symbology to highlight areas of increase and decrease. ","Malaria Prevalence Analysis: Understanding malaria's spatial distribution and temporal changes, especially among children in Sub-Saharan Africa.
+40,F,"Measuring size, shape, and distribution",,,Calculate and visualize changes in malaria prevalence,"Your task is to analyze changes in malaria prevalence among children aged 2鈥?0 in Sub-Saharan Africa from 2000 to 2015. Using raster data from the Malaria Atlas Project, calculate the difference between the prevalence rates in 2000 and 2015 using the Minus raster function. Then, visualize the change in malaria prevalence with a diverging color scheme and adjust the symbology to highlight areas of increase and decrease. ","Malaria Prevalence Analysis: Understanding malaria's spatial distribution and temporal changes, especially among children in Sub-Saharan Africa.
 
-Raster Analysis Techniques: Applying raster functions (e.g., Minus) to calculate changes over time. Remapping raster values into meaningful categories for analysis and visualization.","dataset/2015_Nature_Africa_PR.2000.tif: GeoTIFF file storing malaria prevalence rates among children aged 2–10 in Sub-Saharan Africa for the year 2000.  Data shape: (1741, 1681)
+Raster Analysis Techniques: Applying raster functions (e.g., Minus) to calculate changes over time. Remapping raster values into meaningful categories for analysis and visualization.","dataset/2015_Nature_Africa_PR.2000.tif: GeoTIFF file storing malaria prevalence rates among children aged 2鈥?0 in Sub-Saharan Africa for the year 2000.  Data shape: (1741, 1681)
 
-dataset/2015_Nature_Africa_PR.2015.tif: GeoTIFF file storing malaria prevalence rates among children aged 2–10 in Sub-Saharan Africa for the year 2015.  Data shape:(1741, 1681)
+dataset/2015_Nature_Africa_PR.2015.tif: GeoTIFF file storing malaria prevalence rates among children aged 2鈥?0 in Sub-Saharan Africa for the year 2015.  Data shape:(1741, 1681)
 ","1. Load Data
 2. calculate change in Malaria Prevalence
 3. classify change categories
@@ -3509,7 +3506,7 @@ if __name__ == ""__main__"":
 dataset/roads.shp: The road network of Brevard County.
 dataset/nwswm360ft.swm: Spatial weights matrix file created using the Generate Network Spatial Weights tool and a street network built from Brevard County road polylines.","1. Load Dataset
 2. Define crash hotspot
-3. Select Layer By Åttribute(Crashes)
+3. Select Layer By 脜ttribute(Crashes)
 4. Copy Feature
 5. Snap
 6. Spatial Join
@@ -3741,7 +3738,7 @@ if __name__ == ""__main__"":
 "
 49,F,Understanding where,,,Mapping the Impact of Housing Shortage on Oil Workers,"Your task is to analyze homelessness trends in North Dakota during the 2013 oil boom. Join homelessness tabular data to the U.S. states spatial layer using state abbreviations. Then, save the maps for analysis.","Tabular Data Joining: Joining tabular data to spatial layers using a common field (e.g., state abbreviation) is crucial for mapping.
 
-The North Dakota oil boom (2012–2013) attracted thousands of workers due to high-paying jobs in the energy sector.","dataset/homeless_data.xlsx: containing state-level homelessness data in the United States for 2013. The dataset includes the following columns:State, Change, Pop13, Homeless13","1. Load data
+The North Dakota oil boom (2012鈥?013) attracted thousands of workers due to high-paying jobs in the energy sector.","dataset/homeless_data.xlsx: containing state-level homelessness data in the United States for 2013. The dataset includes the following columns:State, Change, Pop13, Homeless13","1. Load data
 2. Join tabular data to spatial data
 3. Add calculated fields
 4. Save maps",4,"import arcpy
@@ -3779,7 +3776,7 @@ arcpy.management.CalculateField(
 # 4. Save the project
 arcpy.mp.ArcGISProject(""CURRENT"").save()
 print(""Project saved successfully."")"
-
+,,,,,,,,,,,
 50,F,Understanding where,Making predictions,,Predict seagrass habitats,"Your task is to predict seagrass habitats with machine learning methods. First, dissolve the USA seagrass, and create 5000 random points on the dissolved result. Then, use the empirical Bayesian kriging geostatistical method to interpolate raster surfaces for the environmental values stored in the Global ocean measurements layer, for temp and salinity, separately. Finally, use the two kriging result as explanatory rasters to perform presence-only prediction (MaxEnt), get the train features and seagrass predict raster as the outputs.","Empirical Bayesian kriging (EBK) is a geostatistical interpolation method that automates the most difficult aspects of building a valid kriging model.
 The Presence-only Prediction (MaxEnt) tool uses a maximum entropy approach (MaxEnt) to estimate the probability of presence of a phenomenon. The tool uses known occurrence points and explanatory variables in the form of fields, rasters, or distance features to provide an estimate of presence across a study area.","dataset/Global_ocean_measurements.shp: Ecological Marine Units point data that contains ocean measurements up to a 90-meter water depth.
 dataset/Global_shallow_waters.shp: Global shallow bathymetry polygon used to predict seagrass globally.
