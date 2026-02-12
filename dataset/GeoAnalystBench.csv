@@ -3776,7 +3776,6 @@ arcpy.management.CalculateField(
 # 4. Save the project
 arcpy.mp.ArcGISProject(""CURRENT"").save()
 print(""Project saved successfully."")"
-,,,,,,,,,,,
 50,F,Understanding where,Making predictions,,Predict seagrass habitats,"Your task is to predict seagrass habitats with machine learning methods. First, dissolve the USA seagrass, and create 5000 random points on the dissolved result. Then, use the empirical Bayesian kriging geostatistical method to interpolate raster surfaces for the environmental values stored in the Global ocean measurements layer, for temp and salinity, separately. Finally, use the two kriging result as explanatory rasters to perform presence-only prediction (MaxEnt), get the train features and seagrass predict raster as the outputs.","Empirical Bayesian kriging (EBK) is a geostatistical interpolation method that automates the most difficult aspects of building a valid kriging model.
 The Presence-only Prediction (MaxEnt) tool uses a maximum entropy approach (MaxEnt) to estimate the probability of presence of a phenomenon. The tool uses known occurrence points and explanatory variables in the form of fields, rasters, or distance features to provide an estimate of presence across a study area.","dataset/Global_ocean_measurements.shp: Ecological Marine Units point data that contains ocean measurements up to a 90-meter water depth.
 dataset/Global_shallow_waters.shp: Global shallow bathymetry polygon used to predict seagrass globally.
@@ -3899,3 +3898,4 @@ if __name__ == ""__main__"":
     with arcpy.EnvManager(scratchWorkspace=""predict_seagrass_habitats.gdb"", workspace=""predict_seagrass_habitats.gdb""):
         Model()
 "
+
